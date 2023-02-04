@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,59 +10,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!---link css-->
     <link rel="stylesheet" href="./css/style.css">
     <title>Sabor Pastel</title>
 </head>
+
 <body>
-    <header class="nav-bar">
-        <img class="nav-bar-img"src="./img/logo-fondo-trans-horizontal.png"alt="Logo Sabor Pastel">
-        <nav class="nav-bar-list">
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="./pages/productos.html">Nuestros Productos</a>
-                </li>
-
-                <li>
-                    <a href="./pages/cursos.html">Cursos</a>
-                </li>
-
-                <li>
-                    <a href="./pages/galeria.html">Galeria</a>
-                </li>
-
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar nav-bar nav-bar-list navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid sticky-top">
+                <a class="navbar-brand" href="#"><img class="nav-bar-img" src="./img/logo-fondo-trans-horizontal.png"
+                        alt="Logo Sabor Pastel"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <h1 class="title">Bienvenidos a Sabor Pastel</h1>
     <main>
-        <section class="main-principal">
-            <p class="text">Elaboramos todos nuestros productos artesanales respentando las recetas y sabores de siempre, utilizando productos naturales y consiguiendo un resultado único del que nos sentimos verdaderamente orgullosos.</p>
-            <img class="imagen" src="./img/Torta mafalda.jpg" alt="torta">
+        <section class="main-principal container">
+            <p class="text">Elaboramos todos nuestros productos artesanales respentando las recetas y sabores de
+                siempre, utilizando productos naturales y consiguiendo un resultado único del que nos sentimos
+                verdaderamente orgullosos.</p>
+            <div id="carouselExample" class="carousel slide w-55 m-auto">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/cupcakes.jpg" class="d-block w-100 imagen" alt="cupcake">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/mini2.jpg" class="d-block w-100 imagen" alt="mini">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/torta curso.jpg" class="d-block w-100 imagen" alt="torta">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
         </section>
         <h2 class="title">Sobre Nosotros</h2>
         <section class="about-us">
             <div>
-                <p class="text">Somos una empresa familiar que buscamos mantener el sabor y la calidad de nuestros productos en todo moemtno, respetando las recetas, los ingredientes naturales, la calidad tradicional y todos los procesos de elaboración artesanal. El sabor y el gusto del buen hacer caracterizan todas y cada una de nuestras creaciones.</p>
+                <p class="text">Somos una empresa familiar que buscamos mantener el sabor y la calidad de nuestros
+                    productos en todo moemtno, respetando las recetas, los ingredientes naturales, la calidad
+                    tradicional y todos los procesos de elaboración artesanal. El sabor y el gusto del buen hacer
+                    caracterizan todas y cada una de nuestras creaciones.</p>
             </div>
             <div>
-                <img class="imagen-product img" src="./img/Sobre nosotros.jpg" alt="nosotros">
-                <img class="imagen-product img" src="./img/nosotros img.jpg" alt="nosotros">
+                <img class="about-us-img" src="./img/Sobre nosotros.jpg" alt="nosotros">
             </div>
         </section>
     </main>
     <footer class="footer">
         <a href="#top">
-            <img class="img-footer"src="./img/logo-fondo-trans-horizontal.png"alt="logo">
+            <img class="img-footer" src="./img/logo-fondo-trans-horizontal.png" alt="logo">
         </a>
         <h4>Todos los derechos Reservados ®</h4>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,106 +1,122 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*celular*/
 .nav-bar {
-    background: rgb(255,223,231);
-    background: linear-gradient(180deg, rgba(255,223,231,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(255, 223, 231);
+    background: linear-gradient(180deg, rgba(255, 223, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     font-family: 'Kanit', sans-serif;
     color: black;
 }
-.nav-bar-img {
-    width: 30%;
-    padding-left: 15px;
+
+.navbar-brand {
+    width: 50%;
 }
-.nav-bar-list ul{
+
+.navbar-nav {
+    width: 100%;
+    justify-content: end;
+}
+
+.nav-bar-img {
+    width: 65%;
+}
+
+.nav-bar-list ul {
     list-style: none;
     padding: 25px;
-    display: flex;
-    align-items: center;
 }
-.nav-bar-list ul a{
+
+.nav-bar-list ul a {
     text-decoration: none;
     color: black;
     padding: .8rem;
 }
-.main-principal{
+
+.main-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.title{
+
+.title {
     text-align: center;
     font-family: 'Dancing Script', cursiva;
     color: black;
     padding: 10px;
 }
-.imagen{
+
+.imagen {
     width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 10px;
 }
-.text{
+
+.text {
     text-align: center;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     color: black;
 }
-.about-us{
+
+.about-us {
     text-align: center;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-    grid-template-areas: 
-    "texto img";
-    justify-content: center;
-    align-items: center;
-}
-.main-principal-product {
-    text-align: center;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
-    grid-template-areas: 
-    "one one"
-    "two two"
-    "three three"
-    "four four";
-    justify-items: center;
-    align-items: center;
-}
-.cake {
-    grid-area: one;
-}
-.cookies {
-    grid-area: two;
-}
-.popcakes {
-    grid-area: three;
-}
-.cupcakes {
-    grid-area: four;
-}
-.imagen-product{
-    width: 300px;
-    padding: 10px;
-}
-.form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.about-us-img {
+    width: 350px;
+}
+
+.imagen-product {
+    width: 400px;
+    padding: 10px;
+}
+
+.main-principal-product {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.cake {
+    grid-area: one;
+}
+
+.cookies {
+    grid-area: two;
+}
+
+.popcakes {
+    grid-area: three;
+}
+
+.cupcakes {
+    grid-area: four;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-items {
     width: 500px;
     display: flex;
@@ -110,24 +126,135 @@
     padding: 15px;
     font-family: 'Poppins', sans-serif;
 }
-.imagen-galeria{
+
+.imagen-galeria {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 1px;
 }
-.footer{
+
+.footer {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: rgb(255,223,231);
-    background: linear-gradient(0deg, rgba(255,223,231,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(255, 223, 231);
+    background: linear-gradient(0deg, rgba(255, 223, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
     font-family: 'Kanit', sans-serif;
     color: black;
 }
+
 .img-footer {
-    width: 15%
+    width: 40%
+}
+.whatsapp {
+    text-decoration: none;
+    color: black;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+
+    .carousel {
+        width: 75%;
+    }
+
+    .about-us {
+        text-align: center;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 5px;
+        grid-template-areas:
+            "texto img";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-principal-product {
+        text-align: center;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+        grid-template-areas:
+            "one one"
+            "two two"
+            "three three"
+            "four four";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cake {
+        grid-area: one;
+    }
+
+    .cookies {
+        grid-area: two;
+    }
+
+    .popcakes {
+        grid-area: three;
+    }
+
+    .cupcakes {
+        grid-area: four;
+    }
+
+    .imagen-product {
+        width: 250px;
+        padding: 10px;
+    }
+    .about-us-img {
+        width: 350px;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    .carousel {
+        width: 40%;
+    }
+
+    .main-principal-product {
+        text-align: center;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+        grid-template-areas:
+            "one one"
+            "two two"
+            "three three"
+            "four four";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cake {
+        grid-area: one;
+    }
+
+    .cookies {
+        grid-area: two;
+    }
+
+    .popcakes {
+        grid-area: three;
+    }
+
+    .cupcakes {
+        grid-area: four;
+    }
+
+    .img-footer {
+        width: 20%
+    }
 }

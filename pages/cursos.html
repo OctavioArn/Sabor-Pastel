@@ -9,36 +9,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!---link css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Sabor Pastel</title>
 </head>
 <body>
-    <header class="nav-bar">
-        <img class="nav-bar-img"src="../img/logo-fondo-trans-horizontal.png"alt="Logo Sabor Pastel">
-        <nav class="nav-bar-list">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/productos.html">Nuestros Productos</a>
-                </li>
-                <li>
-                    <a href="../pages/cursos.html">Cursos</a>
-                </li>
-                <li>
-                    <a href="../pages/galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar nav-bar nav-bar-list navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="nav-bar-img" src="../img/logo-fondo-trans-horizontal.png"
+                        alt="Logo Sabor Pastel"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <h1 class="title">Nuestros cursos</h1>
     <main class="main-principal">
-        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate cumque molestias, tempora mollitia sint, quos repellat laudantium rem dolorum quis voluptas est, quam delectus? Delectus repellendus deleniti exercitationem pariatur sapiente.</p>
+        <p class="text">Si tu deseo es aprender a hacer tortas, paletas, cupcakes, este es el lugar, no dudes en contactarte con nosotros para más información <a class="whatsapp" href="https://api.whatsapp.com/send?phone=+543794698046&text=Hola,%20somos%20Sabor%20Pastel,%20en%20que%20podemos%20ayudarte"
+            target="_blank">3794698046</a>.</p>
         <img class="imagen"src="../img/torta curso.jpg" alt="cake">
     </main>
     <footer class="footer">
@@ -47,6 +59,7 @@
         </a>
         <h4 class="footer-text">Todos los derechos Reservados ®</h4>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -10,40 +10,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!---link css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Sabor Pastel</title>
 </head>
 
 <body>
-    <header class="nav-bar">
-        <img class="nav-bar-img" src="../img/logo-fondo-trans-horizontal.png" alt="Logo Sabor Pastel">
-        <nav class="nav-bar-list">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/productos.html">Nuestros Productos</a>
-                </li>
-                <li>
-                    <a href="../pages/cursos.html">Cursos</a>
-                </li>
-                <li>
-                    <a href="../pages/galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar nav-bar nav-bar-list navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="nav-bar-img" src="../img/logo-fondo-trans-horizontal.png"
+                        alt="Logo Sabor Pastel"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <h1 class="title">Nuestros Productos</h1>
     <main class="main-principal-product">
-        <div>
-            <img class="imagen-product cake" src="../img/torta forrada 6.jpg" alt="torta forrada">
-            <img class="imagen-product cake" src="../img/torta forrada5.jpg" alt="torta forrada">
-        </div>
         <div>
             <h2 class="title">Tortas temáticas</h2>
             <p class="text cake">
@@ -53,6 +61,10 @@
                 explicabo
                 est.
             </p>
+        </div>
+        <div>
+            <img class="imagen-product cake" src="../img/torta forrada 6.jpg" alt="torta forrada">
+            <img class="imagen-product cake" src="../img/torta forrada5.jpg" alt="torta forrada">
         </div>
         <div>
             <h2 class="title">Galletitas temáticas</h2>
@@ -67,10 +79,6 @@
             <img class="imagen-product cookies" src="../img/cookies.jpg" alt="galletitas">
         </div>
         <div>
-            <img class="imagen-product popcake" src="../img/mini1.jpg" alt="galletitas">
-            <img class="imagen-product popcake" src="../img/mini6.jpg" alt="galletitas">
-        </div>
-        <div>
             <h2 class="title">Popcake</h2>
             <p class="text popcake">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, illum. Tenetur laboriosam
@@ -78,6 +86,11 @@
                 blanditiis animi ad recusandae magni.
             </p>
         </div>
+        <div>
+            <img class="imagen-product popcake" src="../img/mini1.jpg" alt="galletitas">
+            <img class="imagen-product popcake" src="../img/mini6.jpg" alt="galletitas">
+        </div>
+
         <div>
             <h2 class="title">Cupcakes</h2>
             <p class="text cookies">
@@ -99,6 +112,9 @@
             <h4>Todos los derechos Reservados ®</h4>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
