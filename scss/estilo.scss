@@ -1,0 +1,26 @@
+/*Variables de textos*/
+$font-title: 'Dancing Script', cursiva;
+$font-text: 'Kanit', sans-serif;
+$font-nav-footer: "Poppins",Sans-serif;
+
+/*Variables del tamaño de la imagen*/
+$img_big: 400px;
+$img_medium: 300px;
+
+/*Variable de colores de bt en cards*/
+$bgpink: #fff0f6; 
+$bgyellow-cake: #fffec4;
+$tex-color: #000000;
+
+@mixin boton ($bgcard){
+    background-color: $bgcard;
+    font-family: $font-text;
+    color: $tex-color;
+}
+
+@import "index";
+@import "curso";
+@import "galeria";
+@import "productos";
+@import "contacto";
+@import "common";

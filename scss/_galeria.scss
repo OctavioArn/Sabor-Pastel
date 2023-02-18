@@ -1,0 +1,10 @@
+.imagen_galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+    .img {
+    width: $img_medium;
+}
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*celular*/
+.main_header {
+    background: rgb(255, 223, 231);
+    background: linear-gradient(180deg, rgba(255, 223, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    list-style-type: none;
+    font-family: $font-nav-footer;
+    color: black;
+    .navbar-brand {
+        width: 50%;
+    }
+    .head_logo_img {
+        width: 60%;
+    }
+    & li {
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    & li:hover,
+    li:focus {
+        background-size: 100% 2px;
+    }
+}
+
+.main_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title {
+    text-align: center;
+    font-family: $font-title;
+    color: black;
+    padding: 10px;
+}
+
+.imagen {
+    width: $img_big;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.main_text {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: $font-text;
+    color: black;
+    line-height: 1.5;
+}
+
+footer {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: rgb(255, 223, 231);
+    background: linear-gradient(0deg, rgba(255, 223, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    font-family: $font-nav-footer;
+    color: black;
+    .footer_img {
+        width: 40%;
+    }
+}
+.whatsapp{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        .footer_img {
+            width: 25%;
+        }
+    }
+}
