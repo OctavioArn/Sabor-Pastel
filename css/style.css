@@ -65,7 +65,8 @@
   justify-items: center;
   align-items: center; }
   .main_principal_product .card {
-    padding: 0; }
+    padding: 0;
+    margin-left: 20px; }
     .main_principal_product .card .card_yellow {
       background-color: #fffec4;
       font-family: "Kanit", sans-serif;
@@ -104,14 +105,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .form_items {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
+  .form .contact-form {
     font-family: "Kanit", sans-serif; }
+    .form .contact-form .mws {
+      max-width: 800px; }
+  .form input,
+  .form textarea {
+    background-color: #fff0f6;
+    border: none; }
 
 * {
   margin: 0;
@@ -164,7 +165,8 @@
   text-decoration: none;
   font-family: "Kanit", sans-serif;
   color: black;
-  line-height: 1.5; }
+  line-height: 1.5;
+  width: 100%; }
 
 footer {
   padding-top: 15px;

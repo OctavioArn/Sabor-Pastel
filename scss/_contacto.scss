@@ -3,13 +3,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &_items {
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 15px;
+    .contact-form {
         font-family: $font-text;
-    }
+            .mws {
+                max-width: 800px;
+            }
+        }
+        input,
+        textarea {
+            background-color: $bgpink;
+            border: none;
+        }
 }

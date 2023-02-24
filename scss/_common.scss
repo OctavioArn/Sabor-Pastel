@@ -11,12 +11,15 @@
     list-style-type: none;
     font-family: $font-nav-footer;
     color: black;
+
     .navbar-brand {
         width: 50%;
     }
+
     .head_logo_img {
         width: 60%;
     }
+
     & li {
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
@@ -24,6 +27,7 @@
         background-size: 0% 2px;
         transition: background-size .3s;
     }
+
     & li:hover,
     li:focus {
         background-size: 100% 2px;
@@ -59,6 +63,7 @@
     font-family: $font-text;
     color: black;
     line-height: 1.5;
+    width: 100%;
 }
 
 footer {
@@ -71,11 +76,13 @@ footer {
     background: linear-gradient(0deg, rgba(255, 223, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
     font-family: $font-nav-footer;
     color: black;
+
     .footer_img {
         width: 40%;
     }
 }
-.whatsapp{
+
+.whatsapp {
     text-decoration: none;
     color: black;
 }

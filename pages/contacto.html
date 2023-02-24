@@ -52,25 +52,27 @@
           </nav>
     </header>
     <main class="form">
-    <h1 class="main_title">Contactate con nosotros</h1>
-    <div>
-        <p class="main_text">Ante dudas y/o consultas, no dudes en escribirnos directamente a nuestro Whatsapp. En breve estaremos en contacto con vos para despejar tus inquietudes y ofrecerte productos de excelente calidad. Muchas gracias.</p>
-    </div>
-    <form>
-        <fieldset class="form_items">
-            <label for="nombre">Nombre y apellido</label>
-            <input type="text" id="nombre" placeholder="Nombre completo">
-            <label for="telefono">Numero de telefono</label>
-            <input type="tel" name="telefono" id="telefono" placeholder="sin 0 ni 15">
-            <label for="mensaje">Hacé tu pedido</label>
-            <textarea name="mensaje" id="mensaje" cols="10" rows="5"></textarea>
-            <input type="submit" value="Enviar formulario">
-        </fieldset>
-    </form>
+      <h1 class="main_title">Contactate con nosotros</h1>
+      <div>
+          <p class="main_text">Ante dudas y/o consultas, no dudes en escribirnos directamente a nuestro Whatsapp. En breve estaremos en contacto con vos para despejar tus inquietudes y ofrecerte productos de excelente calidad. Muchas gracias.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 pe-5 ps-5">
+        <form id="contact-form" action="#" method="post" class="w-100 mws">
+          <label for="name" class="white bold">Nombre</label><br>
+          <input type="text" id="name" name="name" class="w-100" required><br>
+          <label for="number" class="white bold">Numero de teléfono</label><br>
+          <input type="number" id="number" name="number" class="w-100" required><br>
+          <label for="message" class="white bold">Tu mensaje</label><br>
+          <textarea id="message" name="message" class="w-100" rows="6" required></textarea><br>
+          <button type="submit" id="submit-button" class="boton2 mt-2">Enviar</button>
+        </form>
+      </div>
+      <div">
         <h2 class="main_title">Donde nos podes encontrar</h2>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5006.328098304927!2d-58.82486671474972!3d-27.468993270097446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b5e23a97a59%3A0x3463f3a1df02eaba!2sHip%C3%B3lito%20Yrigoyen%202040%2C%20W3400ATQ%20Corrientes!5e0!3m2!1ses-419!2sar!4v1673621585088!5m2!1ses-419!2sar"
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </main>
         <footer class="main_footer container-fluid d-flex flex-wrap justify-content-center align-items-center py-3 my-8">
           <h2 class="main_title">Contactate con nosotros</h2>

@@ -8,6 +8,7 @@
     align-items: center;
     .card {
         padding: 0;
+        margin-left: 20px;
         .card_yellow {
             @include boton ($bgyellow-cake);
         }
