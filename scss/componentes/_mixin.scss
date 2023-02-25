@@ -1,0 +1,5 @@
+@mixin bg ($bgcard){
+    background-color: $bgcard;
+    font-family: $font-text;
+    color: $tex-color;
+}

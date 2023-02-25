@@ -1,7 +1,9 @@
 @charset "UTF-8";
+/*Componente*/
 /*Variables de textos*/
 /*Variables del tamaño de la imagen*/
 /*Variable de colores de bt en cards*/
+/*Pages styles import*/
 .about_us {
   text-align: center;
   padding: 10px;
@@ -72,9 +74,19 @@
       font-family: "Kanit", sans-serif;
       color: #000000; }
     .main_principal_product .card .card_pink {
-      background-color: #fff0f6;
+      background-color: #ffe1ee;
       font-family: "Kanit", sans-serif;
       color: #000000; }
+    .main_principal_product .card .boton_yellow {
+      background-color: #fffec4;
+      font-family: "Kanit", sans-serif;
+      color: #000000;
+      border: black 1px solid; }
+    .main_principal_product .card .boton_pink {
+      background-color: #ffe1ee;
+      font-family: "Kanit", sans-serif;
+      color: #000000;
+      border: black 1px solid; }
 
 /*tablet*/
 @media screen and (min-width: 768px) {
@@ -111,8 +123,10 @@
       max-width: 800px; }
   .form input,
   .form textarea {
-    background-color: #fff0f6;
+    background-color: #ffe1ee;
     border: none; }
+  .form .boton2 {
+    background-color: #ffe1ee; }
 
 * {
   margin: 0;

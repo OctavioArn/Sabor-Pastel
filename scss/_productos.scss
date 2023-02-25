@@ -10,10 +10,18 @@
         padding: 0;
         margin-left: 20px;
         .card_yellow {
-            @include boton ($bgyellow-cake);
+            @include bg ($bgyellow-cake);
         }
         .card_pink {
-            @include boton ($bgpink); 
+            @include bg ($bgpink); 
+        }
+        .boton_yellow {
+            @include bg ($bgyellow-cake);
+            border: black 1px solid;
+        }
+        .boton_pink{
+            @include bg ($bgpink);
+            border: black 1px solid;
         }
     }
 }
