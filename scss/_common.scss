@@ -19,19 +19,6 @@
     .head_logo_img {
         width: 60%;
     }
-
-    & li {
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
-    }
-
-    & li:hover,
-    li:focus {
-        background-size: 100% 2px;
-    }
 }
 
 .main_principal {
@@ -92,5 +79,19 @@ footer {
         .footer_img {
             width: 25%;
         }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main_header li {
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+    & li:hover,
+    li:focus {
+        background-size: 100% 2px;
     }
 }
